@@ -20,8 +20,8 @@
    - Inter: body copy, navigation, buttons (loaded from Google Fonts — see
      the <head> of each page)
    Recoleta and Carollo Playscript are self-hosted from assets/fonts/.
-   Filenames below follow a FontName-Weight.woff2/.ttf convention — rename
-   your font files to match, or update the src paths here, if yours differ. */
+   The src paths below match the exact filenames and folder names in the
+   downloaded font files, including spaces in the file names. */
 @font-face {
   font-family: "Recoleta";
   src: url("../fonts/Recoleta/Recoleta Regular.woff2") format("woff2");
