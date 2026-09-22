@@ -15,60 +15,60 @@
 /* Fonts
    This site uses a 3-font system:
    - Xenon Nue: impact, titles, H1, buttons, body text
-   - KalenorOX: subheadings, section titles, service names, card titles
+   - Editorial Today: subheadings, section titles, service names, card titles
    - Nor Belsior: expressive accent, italic lines, quotes, short highlight text
    All fonts are self-hosted from the local assets/fonts folder. */
 @font-face {
-  font-family: "KalenorOX";
-  src: url("../fonts/KalenorOX/Web-TT/KalenorOX-Light.woff2") format("woff2");
+  font-family: "Editorial Today";
+  src: url("../fonts/Editorial%20Today/Editorial%20Today%20OpenType-TT/EditorialToday-Thin.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "KalenorOX";
-  src: url("../fonts/KalenorOX/Web-TT/KalenorOX-Regular.woff2") format("woff2");
+  font-family: "Editorial Today";
+  src: url("../fonts/Editorial%20Today/Editorial%20Today%20OpenType-TT/EditorialToday-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "KalenorOX";
-  src: url("../fonts/KalenorOX/Web-TT/KalenorOX-Medium.woff2") format("woff2");
+  font-family: "Editorial Today";
+  src: url("../fonts/Editorial%20Today/Editorial%20Today%20OpenType-TT/EditorialToday-SemiBold.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "KalenorOX";
-  src: url("../fonts/KalenorOX/Web-TT/KalenorOX-SemiBold.woff2") format("woff2");
+  font-family: "Editorial Today";
+  src: url("../fonts/Editorial%20Today/Editorial%20Today%20OpenType-TT/EditorialToday-SemiBold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "KalenorOX";
-  src: url("../fonts/KalenorOX/Web-TT/KalenorOX-Bold.woff2") format("woff2");
+  font-family: "Editorial Today";
+  src: url("../fonts/Editorial%20Today/Editorial%20Today%20OpenType-TT/EditorialToday-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "KalenorOX";
-  src: url("../fonts/KalenorOX/Web-TT/KalenorOX-Italic.woff2") format("woff2");
+  font-family: "Editorial Today";
+  src: url("../fonts/Editorial%20Today/Editorial%20Today%20OpenType-TT/EditorialToday-Italic.ttf") format("truetype");
   font-weight: 400;
   font-style: italic;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "KalenorOX";
-  src: url("../fonts/KalenorOX/Web-TT/KalenorOX-BoldItalic.woff2") format("woff2");
+  font-family: "Editorial Today";
+  src: url("../fonts/Editorial%20Today/Editorial%20Today%20OpenType-TT/EditorialToday-BoldItalic.ttf") format("truetype");
   font-weight: 700;
   font-style: italic;
   font-display: swap;
@@ -221,9 +221,9 @@
 :root {
   --default-font: "Xenon Nue", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   --impact-font: "Xenon Nue", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  --heading-font: "KalenorOX", Georgia, "Times New Roman", serif;
+  --heading-font: "Editorial Today", Georgia, "Times New Roman", serif;
   --accent-font: "Nor Belsior", Georgia, serif;
-  --nav-font: "KalenorOX", Georgia, serif;
+  --nav-font: "Editorial Today", Georgia, serif;
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
