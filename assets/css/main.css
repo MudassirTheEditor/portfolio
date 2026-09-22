@@ -224,7 +224,7 @@
   --heading-font: "Editorial Today", Georgia, "Times New Roman", serif;
   --accent-font: "Nor Belsior", Georgia, serif;
   --nav-font: "Editorial Today", Georgia, serif;
-  --editorial-letter-spacing: 1pt;
+  --editorial-letter-spacing: 0.04em;
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
