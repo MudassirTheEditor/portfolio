@@ -14,216 +14,83 @@
 --------------------------------------------------------------*/
 /* Fonts
    This site uses a 3-font system:
-   - Xenon Nue: impact, titles, H1, buttons, body text
-   - Editorial Today: subheadings, section titles, service names, card titles
-   - Nor Belsior: expressive accent, italic lines, quotes, short highlight text
-   All fonts are self-hosted from the local assets/fonts folder. */
+   - Recoleta: titles, H1s, the hero name mark ("MUDASSIR")
+   - Carollo Playscript: subheadings, all-caps section labels (SERVICES,
+     EXPERIENCE...), card/service titles, expressive accent lines
+   - Inter: body copy, navigation, buttons (loaded from Google Fonts — see
+     the <head> of each page)
+   Recoleta and Carollo Playscript are self-hosted from assets/fonts/.
+   Filenames below follow a FontName-Weight.woff2/.ttf convention — rename
+   your font files to match, or update the src paths here, if yours differ. */
 @font-face {
-  font-family: "Editorial Today";
-  src: url("../fonts/Editorial%20Today/Editorial%20Today%20OpenType-TT/EditorialToday-Thin.ttf") format("truetype");
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Editorial Today";
-  src: url("../fonts/Editorial%20Today/Editorial%20Today%20OpenType-TT/EditorialToday-Regular.ttf") format("truetype");
+  font-family: "Recoleta";
+  src: url("../fonts/Recoleta/Recoleta-Regular.woff2") format("woff2"),
+       url("../fonts/Recoleta/Recoleta-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Editorial Today";
-  src: url("../fonts/Editorial%20Today/Editorial%20Today%20OpenType-TT/EditorialToday-SemiBold.ttf") format("truetype");
+  font-family: "Recoleta";
+  src: url("../fonts/Recoleta/Recoleta-Bold.woff2") format("woff2"),
+       url("../fonts/Recoleta/Recoleta-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Carollo Playscript";
+  src: url("../fonts/Carollo%20Playscript/CarolloPlayscript-Light.woff2") format("woff2"),
+       url("../fonts/Carollo%20Playscript/CarolloPlayscript-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Carollo Playscript";
+  src: url("../fonts/Carollo%20Playscript/CarolloPlayscript-Regular.woff2") format("woff2"),
+       url("../fonts/Carollo%20Playscript/CarolloPlayscript-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Carollo Playscript";
+  src: url("../fonts/Carollo%20Playscript/CarolloPlayscript-Medium.woff2") format("woff2"),
+       url("../fonts/Carollo%20Playscript/CarolloPlayscript-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Editorial Today";
-  src: url("../fonts/Editorial%20Today/Editorial%20Today%20OpenType-TT/EditorialToday-SemiBold.ttf") format("truetype");
+  font-family: "Carollo Playscript";
+  src: url("../fonts/Carollo%20Playscript/CarolloPlayscript-SemiBold.woff2") format("woff2"),
+       url("../fonts/Carollo%20Playscript/CarolloPlayscript-SemiBold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Editorial Today";
-  src: url("../fonts/Editorial%20Today/Editorial%20Today%20OpenType-TT/EditorialToday-Bold.ttf") format("truetype");
+  font-family: "Carollo Playscript";
+  src: url("../fonts/Carollo%20Playscript/CarolloPlayscript-Bold.woff2") format("woff2"),
+       url("../fonts/Carollo%20Playscript/CarolloPlayscript-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Editorial Today";
-  src: url("../fonts/Editorial%20Today/Editorial%20Today%20OpenType-TT/EditorialToday-Italic.ttf") format("truetype");
-  font-weight: 400;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Editorial Today";
-  src: url("../fonts/Editorial%20Today/Editorial%20Today%20OpenType-TT/EditorialToday-BoldItalic.ttf") format("truetype");
-  font-weight: 700;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Xenon Nue";
-  src: url("../fonts/Xenon%20Nue/PostScript/XenonNue-Thin.woff2") format("woff2");
-  font-weight: 100;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Xenon Nue";
-  src: url("../fonts/Xenon%20Nue/PostScript/XenonNue-ExtraLight.woff2") format("woff2");
-  font-weight: 200;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Xenon Nue";
-  src: url("../fonts/Xenon%20Nue/PostScript/XenonNue-Light.woff2") format("woff2");
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Xenon Nue";
-  src: url("../fonts/Xenon%20Nue/PostScript/XenonNue-Regular.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Xenon Nue";
-  src: url("../fonts/Xenon%20Nue/PostScript/XenonNue-Medium.woff2") format("woff2");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Xenon Nue";
-  src: url("../fonts/Xenon%20Nue/PostScript/XenonNue-SemiBold.woff2") format("woff2");
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Xenon Nue";
-  src: url("../fonts/Xenon%20Nue/PostScript/XenonNue-Bold.woff2") format("woff2");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Xenon Nue";
-  src: url("../fonts/Xenon%20Nue/PostScript/XenonNue-ExtraBold.woff2") format("woff2");
-  font-weight: 800;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Xenon Nue";
-  src: url("../fonts/Xenon%20Nue/PostScript/XenonNue-Heavy.woff2") format("woff2");
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Xenon Nue";
-  src: url("../fonts/Xenon%20Nue/PostScript/XenonNue-Regular_Italic.woff2") format("woff2");
-  font-weight: 400;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Xenon Nue";
-  src: url("../fonts/Xenon%20Nue/PostScript/XenonNue-Bold_Italic.woff2") format("woff2");
-  font-weight: 700;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Nor Belsior";
-  src: url("../fonts/Nor%20Belsior/Web-TT/NorBelsior-Light.woff2") format("woff2");
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Nor Belsior";
-  src: url("../fonts/Nor%20Belsior/Web-TT/NorBelsior-Regular.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Nor Belsior";
-  src: url("../fonts/Nor%20Belsior/Web-TT/NorBelsior-Medium.woff2") format("woff2");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Nor Belsior";
-  src: url("../fonts/Nor%20Belsior/Web-TT/NorBelsior-Bold.woff2") format("woff2");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Nor Belsior";
-  src: url("../fonts/Nor%20Belsior/Web-TT/NorBelsior-Italic.woff2") format("woff2");
-  font-weight: 400;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Nor Belsior";
-  src: url("../fonts/Nor%20Belsior/Web-TT/NorBelsior-MediumItalic.woff2") format("woff2");
-  font-weight: 500;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Nor Belsior";
-  src: url("../fonts/Nor%20Belsior/Web-TT/NorBelsior-BoldItalic.woff2") format("woff2");
-  font-weight: 700;
-  font-style: italic;
   font-display: swap;
 }
 
 :root {
-  --default-font: "Xenon Nue", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  --impact-font: "Xenon Nue", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  --heading-font: "Editorial Today", Georgia, "Times New Roman", serif;
-  --accent-font: "Nor Belsior", Georgia, serif;
-  --nav-font: "Editorial Today", Georgia, serif;
+  --default-font: "Inter", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  --impact-font: "Recoleta", Georgia, "Times New Roman", serif;
+  --heading-font: "Carollo Playscript", Georgia, serif;
+  --accent-font: "Carollo Playscript", Georgia, serif;
+  --nav-font: "Inter", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   --editorial-letter-spacing: 0.04em;
 }
 
@@ -322,7 +189,6 @@ h6 {
 .navmenu a,
 .navmenu a:focus,
 .footer .footer-about .logo span,
-.footer .footer-about p,
 .hero h2 .hero-role {
   letter-spacing: var(--editorial-letter-spacing);
 }
@@ -460,7 +326,7 @@ h6 {
 .header .btn-getstarted:focus {
   color: var(--contrast-color);
   background: var(--accent-color);
-  font-family: var(--impact-font);
+  font-family: var(--default-font);
   font-size: 14px;
   padding: 8px 25px;
   margin: 0 0 0 30px;
@@ -786,12 +652,12 @@ h6 {
   font-size: 30px;
   font-weight: 700;
   letter-spacing: 1px;
-  font-family: var(--heading-font);
+  font-family: var(--impact-font);
 }
 
 .footer .footer-about p {
   font-size: 14px;
-  font-family: var(--heading-font);
+  font-family: var(--default-font);
 }
 
 .footer .social-links a {
@@ -1026,7 +892,7 @@ section,
   line-height: 1.05;
   color: var(--heading-color);
   margin-bottom: 1.5rem;
-  letter-spacing: -0.06em;
+  letter-spacing: 0.02em;
 }
 
 @media (max-width: 768px) {
@@ -1114,6 +980,10 @@ section,
   color: var(--heading-color);
   line-height: 0.95;
   letter-spacing: -0.07em;
+}
+
+.hero h2 .hero-name {
+  text-transform: uppercase;
 }
 
 .hero h2 .hero-role {
