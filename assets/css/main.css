@@ -224,6 +224,7 @@
   --heading-font: "Editorial Today", Georgia, "Times New Roman", serif;
   --accent-font: "Nor Belsior", Georgia, serif;
   --nav-font: "Editorial Today", Georgia, serif;
+  --editorial-letter-spacing: 1pt;
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
@@ -315,6 +316,15 @@ h6 {
   color: var(--heading-color-accent);
   font-family: var(--heading-font);
   font-weight: 600;
+  letter-spacing: var(--editorial-letter-spacing);
+}
+
+.navmenu a,
+.navmenu a:focus,
+.footer .footer-about .logo span,
+.footer .footer-about p,
+.hero h2 .hero-role {
+  letter-spacing: var(--editorial-letter-spacing);
 }
 
 .font-accent,
