@@ -977,15 +977,18 @@ section,
 
 .hero h2 .hero-name {
   text-transform: uppercase;
+  font-family: var(--impact-font);
+  font-weight: 800;
 }
 
 .hero h2 .hero-role {
   display: block;
-  font-family: var(--heading-font);
+  font-family: var(--impact-font);
   color: var(--accent-color);
   font-size: 0.72em;
   margin-top: 16px;
   letter-spacing: -0.05em;
+  font-weight: 400;
 }
 
 .hero h2 .hero-role .fw-thin {
@@ -993,7 +996,7 @@ section,
 }
 
 .hero h2 .hero-role .fw-strong {
-  font-weight: 700;
+  font-weight: 600;
 }
 
 @media (max-width: 768px) {
